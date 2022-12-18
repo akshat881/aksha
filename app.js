@@ -1,6 +1,7 @@
 const express =require('express');
 const app=express();
 const path=require('path')
+const PORT = process.env.PORT || 3000;
 require('./db/cones');
 var hbs = require('nodemailer-express-handlebars');
 const sign=require('./models/register');
@@ -90,6 +91,6 @@ else{
 
 
 })
-app.listen(4000,()=>{
+app.listen(PORT,()=>{
     console.log('done');
 })
