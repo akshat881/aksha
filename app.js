@@ -94,3 +94,4 @@ else{
 app.listen(PORT,()=>{
     console.log('done');
 })
+module.exports = app;
